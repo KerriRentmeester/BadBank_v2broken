@@ -1,40 +1,54 @@
 # **Project Name**:  
 
-Bad Bank
+Bad Bank - the second iteration (create-react-app)
+
+*** I COULD NOT GET THE CARD TO BE VISIBLE AFTER I CONVERTED THE APP TO CREATE REACT APP. THIS WAS SUPPOSED TO BE PORTFOLIO II, BUT I COULD NOT GET IT TO WORK. ALL DATA PAGE WAS NEVER TESTED SINCE I COULD NOT GET CARD TO WORK. LOGIN PAGE ALSO WAS NOT TESTED SINCE IT WAS NOT A REQUIREMENT. IF I FIGURE OUT HOW TO MAKE THE BOOTSTRAP CARD VISIBLE, I CAN UPDATE THIS VERSION'S ALL DATA AND LOGIN PAGES BY COMPARING THEM TO THE THIRD ITERATION OF THE PROJECT, WHICH IS FULLY FUNCTIONAL. ALL OTHER FEATURES REQUIRED FOR THIS ASSIGNMENT WERE FUNCTIONAL AND VERIFIED.
 
 # **Description**: 
 
-The Bad Bank project was deployed via Amazon Web Service S3 bucket and can be accessed here to see its capabilities: 
+The Bad Bank project WILL BE deployed via Amazon Web Service S3 bucket and can be accessed here to see its capabilities: 
 
-The Bad Bank project, a React app, is "bad" because there is no security. As a front end banking app, however; it has a register and login page, as well as a deposit and withdraw page. Additionally, there is a home page and a page that tracks all the data in one session. The account balance, initialized at zero, is displayed on the deposit page and the account balance, initialized at $100, is displayed on the withdraw page. Unfortunately the account balance is not linked across pages.
+The Bad Bank project, a Creat-React-App, is "bad" because there is no security. As a front end banking app; however, it has a register and login page, as well as a deposit and withdraw page. Additionally, there is a home page and a page that tracks all the data in one session. The account balance, initialized at zero, is displayed on the deposit page. Additionally, the account balance, initialized at $100, is displayed on the withdraw page. Unfortunately the account balance is not linked across pages at this time.
+
+This iteration of the project is a create-react-app and has up-to-date code as of October 2023; it is compatible with the latest version of React node.js - version 18.
 
 The following validation was employed:
-*
+* All submit buttons are disabled until all the fields have input.
+* Email input fields on the Login and Create Account pages require correct email format, otherwise a warning will appear.
+* Password input fields on the Login and Create Account pages require 8 or more characters.
+* Both Deposit and Withdraw input fields require positive integers, otherwise a warning will appear.
+* The Withdraw input cannot exceed the account balance, otherwise an overdraft warning will appear.
 
-The Bad Bank project is an example of the following skills and capabilities: routing, context, tracking state, event handling, parent/child relationships, and forms. I employed Bootstrap and CSS for styling, as well as HTML5, JavaScript, and JSX. As such, this project is one component of my professional portfolio. This particular project is based off of a similar activity I worked on in September of 2023 from Module 19 and Portfolio II in the MIT xPro via Emeritus bootcamp I was enrolled in called "Professional Certificate in Coding: Full Stack Development with MERN."
+Some Features employed:
+* When hovering over the NavBar, a title appears explaining what each page is/does. 
+* Beware - Account Balance is NOT maintained across pages.
+* Each page has a different color card/content to further distinguish its purpose.
 
-I changed the original course task in the following ways:
-*varied the card color for register, login, deposit, and withdraw pages to further differentiate among the banking tasks.
+The Bad Bank project is an example of the following skills and capabilities: routing, context, tracking state, event handling, parent/child relationships, and forms. I employed Bootstrap and CSS for styling, as well as HTML5, JavaScript, and JSX. As such, this project is one component of my professional portfolio. This particular project is based off of a similar activity I worked on in September and October of 2023 from Modules 18, 19, and Portfolio II in the MIT xPro via Emeritus bootcamp I was enrolled in called "Professional Certificate in Coding: Full Stack Development with MERN."
 
 # **Installation & Dependencies**: 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The project relies on the following dependencies: React, Bootstrap, Babel.
-
 To use the app, follow these steps:
-*Clone the repository or download the code files.
-*Navigate to the project directory in your editor (ex/VSCode).
+* Clone the repository or download the code files.
+* Navigate to the project directory in your editor (ex/VSCode).
+* Examine package.json file for a full list of dependencies.
 
-The following commands need to be entered in the terminal, after navigating to the project directory:
-*npm install
-*npm install bootstrap
-*npm install react-router-dom
-*npm start
+The following commands were entered in the terminal in creation of this app, after navigating to the project directory:
+* npm install
+* npm install react
+* npm install bootstrap
+* npm install react-bootstrap
+* npm install react-dom
+* npm install react-router
+* npm install react-router-dom
+* npm install react-scripts
+* npm start
 
 # **Usage / How to Run**:
 
-The app initiates on the home page, which is fairly generic, giving instructions to use the nav bar to perform desired tasks. The first step would be to "Create Account" or "Login." Once logged in, the user can "Deposit" or "Withdraw" and see the account "Balance" on either of those pages. On the third page, one can see "AllData."
+The app initiates on the home page, which is fairly generic, with a welcome message and security warning. The first step would be to "Create Account" or "Login." Once logged in, the user can "Deposit" or "Withdraw" and see the account "Balance" on either of those pages. On the final page, one can see "AllData."
 
 # **Support**: 
 
@@ -44,9 +58,13 @@ Please contact me via email at krentmeester@uwalumni.com.
 
 Future fixes or improvements that would be helpful to a user:
 
-*I am in the middle of devloping the app. Updates forthcoming.
-*
-*
+* Make the Deposit, Withdraw, and AllData pages only visible upon logging in.
+* Track the account balance across all pages 
+* Track the account balance even after logging out
+* Once logged in, transport the user to an account page where all accounts are visible
+* Once an account is created, transport the user to an account page where all accounts are visible
+* Remove the AllData page
+* NavBar tab is highlighted for the active page
 
 # **License**: 
 
